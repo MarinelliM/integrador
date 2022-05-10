@@ -34,18 +34,18 @@ class ManejadorCama:
             print("El paciente ingresado no se encuentra")
         else:
             print("Paciente: {}  Cama: {} Habitacion: {}".format(self.__Array[i].getNyA(), i+1, self.__Array[i].getHabitacion()))
-            print("Diagnostico: {}  Fecha de Internacion: {}".format(self.__Array[i].getDiagnostico(), self.__Array[i].getFechaI()))
+            print("Diagnostico: {}  Fecha de Internacion: {}".format(self.__Array[i].getDiagnostico(), self.__Array[i].getI()))
             self.__Array[i].ModificarFechA()
-            print("Fecha de Alta : {}".format(self.__Array[i].getFechA()))
+            print("Fecha de Alta : {}".format(self.__Array[i].getA()))
         return i 
 
     def ListaPacienteInt(self):
         x = input("Ingrese un diagnostico:")
         for i in range(30):
-            if self.__Array[i].getDiag() == x and self.__Array[i].getEstado() == True:
+            if self.__Array[i].getDiagnostico() == x and self.__Array[i].getEstado() == True:
                     print('-'*30)
                     print("Habitacion:{}".fomrat(self.__Array[i].getHabitacion()))
                     print("Nombre y Apellido:{}".format(self.__Array[i].getNyA()))
-                    print("Fecha de Internacion:{}".fomat(self.__Array[i].getFechaI()))
-                    print("Fecha de Alta:{}".format(self.__Array[i].getFechA()))
+                    print("Fecha de Internacion:{}".fomat(self.__Array[i].getI()))
+                    print("Fecha de Alta:{}".format(self.__Array[i].getA()))
                     print('-'*30)
