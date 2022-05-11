@@ -28,10 +28,10 @@ class manejador:
     cant = 0
      print("Medicamento/Monodroga        Presentacion          Cantidad               Precio")
     for i in range(len(self.__medi))
-      if self.__maneja[i].getidcama() = idcama
-        cant += self.__medi[i].getcant()
+      if self.__maneja[i].getcama() = idcama
+        cant += self.__maneja[i].getc()
                 j = i
-                print("{}/{}           {}                {}                  {}".format(self.__Medicamento[i].getNomC(), self.__Medicamento[i].getMono(), self.__Medicamento[i].getPres(), self.__Medicamento[i].getCantApl(), self.__Medicamento[i].getPrecT()*self.__Medicamento[i].getCantApl()))
-     print("Total Adeudado: {} ".format(cant * self.__medi[j].getpreciot()))
+                print("{}/{}           {}                {}                  {}".format(self.__maneja[i].getn(), self.__maneja[i].getm(), self.__maneja[i].getp(), self.__maneja[i].getc(), self.__maneja[i].getprecio()*self.__maneja[i].getc()))
+     print("Total Adeudado: {} ".format(cant * self.__maneja[j].getprecio()))
       
         
