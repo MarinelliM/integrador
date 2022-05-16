@@ -1,5 +1,5 @@
 from manejadorcama import ManejaCama
-from manejadormedicamento import manejamedi
+from manejamedicamentos import manejador
 
 class Menu:
     __opcion = None
@@ -9,7 +9,7 @@ class Menu:
 
     def menu(self):
         if self.__opcion == 1:
-            c = manejacama()
+            c = Manejacama()
             c.CargaCama()
             pos = c.ListaPacienteAlta()
             if pos < 30:
