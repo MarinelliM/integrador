@@ -14,8 +14,8 @@ class Menu:
             pos = c.ListaPacienteAlta()
             if pos < 30:
                 c = manejador()
-                c.CargaMed()
-                c.BuscarMedicamento(pos+1)
+                c.Cargamed()
+                c.buscamed(pos+1)
 
         elif self.__opcion == 2:
             c = ManejadorCama()
