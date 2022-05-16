@@ -10,16 +10,16 @@ class Menu:
     def menu(self):
         if self.__opcion == 1:
             c = Manejacama()
-            c.CargaCama()
+            c.Carga()
             pos = c.ListaPacienteAlta()
             if pos < 30:
-                c = ManejadorMedicamento()
+                c = manejador()
                 c.CargaMed()
                 c.BuscarMedicamento(pos+1)
 
         elif self.__opcion == 2:
             c = ManejadorCama()
-            c.CargaCama()
+            c.Carga()
             c.ListaPacienteInt()
 
         else:
