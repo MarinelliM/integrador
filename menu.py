@@ -1,4 +1,4 @@
-from manejadorcamas import manejacama
+from manejadorcama import ManejaCama
 from manejadormedicamento import manejamedi
 
 class Menu:
